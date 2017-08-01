@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 默认的放大器处理类 -->  
+    <bean id="defaultActiveProve" class="indi.ninet.amplifierprove.service.DefaultActiveProve">
+    <!-- dns放大器处理类 -->  
+    </bean>
+    <bean id="dnsActiveProve" class="indi.ninet.amplifierprove.service.DnsActiveProve">
+    <!-- tftp放大器处理类 -->  
+    </bean>
+    <bean id="tftpActiveProve" class="indi.ninet.amplifierprove.service.TftpActiveProve">
+     
+    </bean>
+    <!-- 放大器信息 -->
+    <bean id="amplifierInf" class="indi.ninet.amplifierprove.domain.AmplifierInf" scope="prototype">
+     
+    </bean>   
+</beans>  
